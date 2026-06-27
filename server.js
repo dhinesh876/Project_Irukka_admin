@@ -5,7 +5,7 @@ import { serverlog } from './src/middleware/logger.js';
 import { shoprouter } from "./src/routes/shoproutes.js";
 import { routeerrorResponse } from "./src/utils/response.js";
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.use(cors());
